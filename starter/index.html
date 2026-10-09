@@ -1,101 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Image float</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Float Example</title>
 
     <style>
-
-        /* =========================================
-           COMPLETE THE CSS
-           ========================================= */
-
         body {
-            /* Add:
-               font-family
-               font-size
-               width
-               margin
-               padding
-            */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            max-width: 750px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #f4f8fb;
+            color: #333333;
+            line-height: 1.6;
         }
 
         h2 {
-            /* Set the heading color
-               and bottom margin */
+            color: #1565c0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #90caf9;
+            padding-bottom: 10px;
         }
 
         img {
-            /* Float the image left.
-               Add 10px top and bottom margins. */
+            float: left;
+            margin: 10px 20px 15px 0;
+            border: 3px solid white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            max-width: 40%;
+            height: auto;
         }
 
         p {
-            /* Set line-height and margin */
+            margin: 0 0 15px;
         }
 
         ul {
-            /* Set line-height,
-               padding-left,
-               margin-top,
-               and margin-left */
+            line-height: 1.7;
+            padding-left: 220px;
+            margin-top: 15px;
         }
 
         li {
-            /* Set list item spacing */
+            margin-bottom: 10px;
         }
 
         #last {
-            /* Clear the left float */
+            clear: left;
+            padding-top: 15px;
+            border-top: 1px solid #cbd5e1;
         }
 
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            img {
+                float: none;
+                display: block;
+                max-width: 100%;
+                margin: 15px auto;
+            }
+
+            ul {
+                padding-left: 25px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <h2>
-        Teach your students using the books the professionals use
-    </h2>
+    <h2>Help Students Learn with Professional Programming Books</h2>
 
     <p>
-        Although our books are written for professional programmers who need
-        to master new job skills, there have always been instructors teaching
-        job-oriented curricula who've adopted our books. For example, our
-        books are used:
+        Our books are designed for programmers who want to develop
+        practical skills and improve their knowledge. Teachers and
+        instructors also use these resources to prepare students
+        for real-world careers.
     </p>
 
-    <img
-        src="../images/students.jpg"
-        alt="teacher and students"
-        width="192"
-        height="128"
-        longdesc="A teacher looking over the work of four students"
-    >
+    <img src="images/students.jpg"
+         alt="A teacher helping students with their work"
+         width="192"
+         height="128">
 
     <ul>
-
         <li>
-            in college and university MIS programs that focus on providing
-            students with practical, real-world experience
+            College and university programs that teach management
+            information systems and practical workplace skills.
         </li>
 
         <li>
-            by technical institutes and community colleges that focus on the
-            skills that employers are looking for
+            Technical institutes and community colleges that prepare
+            learners for the needs of employers.
         </li>
 
         <li>
-            in Continuing Ed and Extension programs where the students are
-            professionals who are expanding their skills
+            Continuing education programs for professionals who want
+            to strengthen their existing knowledge.
         </li>
-
     </ul>
 
     <p id="last">
-        So if your program fits one of those profiles, please take a look at
-        our books. I'm confident you'll discover a new level of structure,
-        clarity, and relevance that will benefit both you and your students.
+        If your educational program matches one of these descriptions,
+        explore our collection of books. You will find clear explanations,
+        organized lessons, and useful examples to support both teachers
+        and students.
     </p>
 
 </body>
